@@ -3,6 +3,8 @@
 * International keyboard layout.
 * Enable drag with three fingers on trackpad.
 * Do all system updates.
+* Log-in with Apple ID.
+ * Sync Mail, Calendars, Notes, Keychain.
 * Install Chrome.
 * Install Google Drive.
 * Install Sublime Text.
