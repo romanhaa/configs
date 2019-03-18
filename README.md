@@ -5,6 +5,7 @@
 * Do all system updates.
 * Log-in with Apple ID.
  * Sync Calendars, Notes, Keychain.
+* Activate internet accounts for Mail.
 * Install Chrome.
 * Install Google Drive.
 * Install Sublime Text.
