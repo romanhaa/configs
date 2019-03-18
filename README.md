@@ -1,6 +1,7 @@
 # Setup procedure for new macOS work machine
 
 * International keyboard layout.
+* Dark mode.
 * Enable drag with three fingers on trackpad.
 * Do all system updates.
 * Log-in with Apple ID.
