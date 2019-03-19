@@ -5,10 +5,10 @@
 * Enable drag with three fingers on trackpad.
 * Do all system updates.
 * Log-in with Apple ID.
- * Sync Calendars, Notes, Keychain.
+  * Sync Calendars, Notes, Keychain.
 * Activate internet accounts for Mail.
 * Install Chrome.
- * Install uBlock Origin.
+  * Install uBlock Origin.
 * Install Google Drive.
 * Install Sublime Text.
   * Copy settings from GitHub.
