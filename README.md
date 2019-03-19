@@ -17,6 +17,7 @@
 * Install Hyper (through Homebrew).
   * Install snazzy theme.
   * Copy settings from GitHub.
+* Set git account.
 * Install zsh (through Homebrew).
   * Copy config from GitHub.
 * Copy bash profile from GitHub.
