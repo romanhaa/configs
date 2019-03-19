@@ -8,6 +8,7 @@
  * Sync Calendars, Notes, Keychain.
 * Activate internet accounts for Mail.
 * Install Chrome.
+ * Install uBlock Origin.
 * Install Google Drive.
 * Install Sublime Text.
   * Copy settings from GitHub.
