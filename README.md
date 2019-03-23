@@ -18,6 +18,7 @@
   * Install snazzy theme.
   * Copy settings from GitHub.
 * Set git account.
+* Show hidden files.
 * Install zsh (through Homebrew).
   * Copy config from GitHub.
 * Copy bash profile from GitHub.
