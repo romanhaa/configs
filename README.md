@@ -26,7 +26,7 @@
   * Install zsh-syntax-highlighting.
   * Install zsh-autosuggestions.
 * Install pure prompt or spaceship prompt (with npm).
-* Install RStudio.
+* Install R and RStudio.
 * Install FileZilla.
 
 To do:
