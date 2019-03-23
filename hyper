@@ -3,5 +3,6 @@ module.exports = {
     fontFamily: '"Meslo LG S for Powerline", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
     fontWeight: 'bold',
   },
+  shell: '/usr/local/bin/zsh',
   plugins: ["hyper-snazzy"],
 };
