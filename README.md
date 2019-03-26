@@ -26,8 +26,15 @@
   * Install zsh-syntax-highlighting.
   * Install zsh-autosuggestions.
 * Install pure prompt or spaceship prompt (with npm).
+* Set locale if necessary.
+
+```bash
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+```
+
 * Install R and RStudio.
-* Install FileZilla.
+* Install FileZilla/Cyberduck.
 
 To do:
 
