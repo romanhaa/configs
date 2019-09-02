@@ -5,11 +5,6 @@
 # Choose if this file is on the cluster or local
 ################################################################################
 
-# machine="cluster"
-machine="local_mac"
-
-POWERLEVEL9K_INSTALLATION_PATH=~/.oh-my-zsh/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
-
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -93,8 +88,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-DEFAULT_USER=$(whoami)
-
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
@@ -102,38 +95,12 @@ alias ..='cd ..' # move up one directory through ..
 alias ...='cd ../..' # move up two directories through ...
 alias ....='cd ../../..' # move up three directories through ....
 
-if [ "$machine" = "cluster" ]; then
-  
-  alias ls='ls --color=always -alh' # force colors for ls command
-  alias chipseq='python2.7 /data/PGP/rhillje/code/ChIP_seq/ChIPSeq_pipeline_main.py' # load ChIPseq pipeline using python 2.7
+alias ls='ls -alh'
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
-  export LSCOLORS=ExFxBxDxCxegedabagacad
+export RSTUDIO_PANDOC=/Applications/RStudio.app/Contents/MacOS/pandoc
 
-  export C_INCLUDE_PATH=/usr/include
-  export CPLUS_INCLUDE_PATH=/usr/include
-  export CPATH=/usr/include
-
-  export PATH=/data/PGP/rhillje/Tools/SICER:$PATH # SICER
-  export PATH=/data/PGP/rhillje/Tools/:$PATH # wigToBigWig and bedToBigBed
-  export PATH=/data/PGP/rhillje/Tools/HOMER:$PATH # HOMER
-  export PATH=/data/PGP/rhillje/tools/bowtie2-2.3.2:$PATH # bowtie2
-  export LD_LIBRARY_PATH=/data/PGP/rhillje/tools/tbb40_233oss/build/linux_intel64_gcc_cc6.3.0_libc2.24_kernel3.2.0_release:$LD_LIBRARY_PATH # TBB library
-  export PATH=/data/PGP/rhillje/tools/tophat-2.1.1.Linux_x86_64:$PATH # TopHat
-  export PATH=/data/PGP/rhillje/tools/cufflinks-2.2.1.Linux_x86_64:$PATH # cufflinks
-  export PATH=/data/PGP/rhillje/tools/seqtk-master:$PATH # seqtk
-  export PATH=/data/PGP/rhillje/tools/gmap-2017-05-08/bin:$PATH # GSNAP
-  export PATH=/data/PGP/rhillje/tools/Salmon-0.8.2_linux_x86_64/bin:$PATH # salmon
-
-elif [ "$machine" = "local_mac" ]; then
-  
-  alias ls='gls -alh --color=auto --time-style=long-iso'
-  export CLICOLOR=1
-  export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-
-fi
-
-export JAVA_HOME=`/usr/libexec/java_home -v 11`
-launchctl setenv JAVA_HOME $JAVA_HOME
-
+# Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
-prompt pure
+prompt spaceship
