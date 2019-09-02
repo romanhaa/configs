@@ -7,15 +7,17 @@
 * Log-in with Apple ID.
   * Sync Calendars, Notes, Keychain.
 * Activate internet accounts for Mail.
-* Install Chrome.
+* Install Chrome/Firefox.
   * Install uBlock Origin.
-* Install Google Drive.
-* Install Sublime Text.
+* Install Google Drive client.
+* Install SafeInCloud.
+* Install Visual Studio Code.
+  * Get `Code Settings Sync` extension and download settings (ID in SafeInCloud).
   * Copy settings from GitHub.
 * Install Homebrew.
-* Install 'Meslo LG S (Regular) for Powerline' font.
+* Install 'Fire Code' font.
 * Install Hyper (through Homebrew).
-  * Install snazzy theme.
+  * Install hyper-snazzy theme.
   * Copy settings from GitHub.
 * Set git account.
 * Show hidden files.
@@ -29,13 +31,20 @@
 * Set locale if necessary.
 
 ```bash
-export LC_ALL=en_US.UTF-8  
+export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 ```
 
+* Create SSH key and add it to GitHub + HPC.
+
+```bash
+ssh-keygen -t rsa -b 4096
+```
+
 * Install R and RStudio.
-* Install FileZilla/Cyberduck.
+* Add file servers and HPC to Finder.
 
-To do:
-
-* SSH.
+```
+cifs://hpccifs.ieo.it
+cifs://filesdeo.ieo.it
+```
